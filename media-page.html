@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Media Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <h1>My Media Page</h1>
+    </header>
+
+    <main>
+
+        <!-- Regular Image -->
+        <section>
+            <h2>Sample Image</h2>
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTeVVZaH0ez2Hov7pla8Zy2JaAdU9iLqQw8w&s" 
+                alt="Mountains"
+                width="600">
+        </section>
+
+        <!-- Responsive Picture Element -->
+        <section>
+            <h2>Responsive Image</h2>
+            <picture>
+        <!-- Large image for screens wider than 768px -->
+        <source 
+            srcset="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            media="(min-width: 768px)">
+
+        <!-- Default smaller image -->
+        <img 
+            src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=500"
+            alt="Beautiful landscape with mountains and lake">
+    </picture>
+
+
+            
+        </section>
+
+
+        <!-- YouTube Video  -->
+        <!-- While trying to find a video that will directly open in my browser I can't so we need to press on the video in order to watch it in Youtube -->
+        <section>
+            <h2>Embedded YouTube Video</h2>
+
+            <iframe 
+                width="560" height="315" 
+                src="https://www.youtube.com/embed/5MuIMqhT8DM?si=WzsTlkPnifAMGgOS" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <!--Google Map that specifies our office location -->
+        <section>
+            <h2>Our Location</h2>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4172971127214!2d44.50225967622995!3d40.17752577016313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcff47e83133%3A0x2afdb52d4dc88f6d!2s8%20Mesrop%20Mashtots%20Ave%2C%20Yerevan%200015!5e0!3m2!1sen!2sam!4v1771941135398!5m2!1sen!2sam" 
+                width="600" height="450" style="border:0;" 
+                allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+                
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Media Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
